@@ -9,3 +9,4 @@
 - Arquivos de Log do Windows.
 - Pastas dos arquivos temporários. dos navegadores IE, Edge, Firefox, Chrome, Brave e Vivaldi.
 - Pasta com arquivos temporários do Media Cache files da Adobe.
+- Pasta com arquivos temporários do Spotify.
