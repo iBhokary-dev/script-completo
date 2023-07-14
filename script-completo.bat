@@ -1,6 +1,6 @@
 chcp 65001
 REM @ SCRIPT PARA ELIMINAÇÃO DE ARQUIVOS TEMPORÁRIOS
-REM @ Lixeira, Windows, Logs, Navegadores e Adobe Media Cache
+REM @ Lixeira, Windows, Logs, Navegadores, Adobe Media Cache e Spotify
 REM @ BABOO 2023 - www.baboo.com.br
 REM @
 REM @ Versão 1.2c - 30/06/2023
@@ -181,6 +181,12 @@ for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\brow*.* 
 REM ******************** ADOBE MEDIA CACHE FILES ********************
 
 for /d %%F in (C:\Users\*) do del %%F\AppData\Roaming\Adobe\Common\"Media Cache files"\*.* /s /q
+
+REM ******************** SPOTIFY CACHE FILES ********************
+
+for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Spotify\Browser\cache\*.* /s /q
+for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Spotify\Browser\GPUCache\*.* /s /q
+for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Spotify\Data\*.* /s /q
 
 exit
 
